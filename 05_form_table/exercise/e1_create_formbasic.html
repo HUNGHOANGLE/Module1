@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .container{
+        background-color: aqua;
+        width: 100%;
+        height: 95vh;
+    }
+    .content{
+        background-color: aliceblue;
+        width: 60%;
+        height: 70vh;
+        position: absolute;
+        top: 16%;
+        left: 16%;
+    }
+    .content h1{
+        background-color: aquamarine;
+        text-align: center;
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .mainly p {
+        color: #8A2BE2	    ;
+    }
+    .mainly input{
+        /* position: relative;
+        top: -33px;
+        left: 90px;
+        width: 100%; */
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+
+
+    }
+
+
+    .nav p{
+        color: #8A2BE2	;
+      
+    }
+    .nav label {
+        color: brown;
+    }
+    .nav input, label{
+        position: relative;
+        left: 75px;
+        top: -33px;
+    }
+    .button input{
+        text-decoration: none;
+     
+        border-radius: 25%;
+        font-size: 20px;
+        position: relative;
+        left: 30px;     
+        border: 2px solid #4285f4;
+   
+    }
+</style>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Sở Thích của bạn</h1>
+        <form class="mainly" action="">
+            <p>Họ Và Tên</p>
+            <input type="text" name="Name">
+            <p>Email</p>
+            <input type="text" name="Email">
+        </form>
+        <form class="nav" action="">
+            <p>Sở Thích</p>
+            <input type="checkbox" name="vehicle1"> 
+            <label for="vehicle1"> Thể thao</label>
+
+            <input type="checkbox" name="vehicle2"> 
+            <label for="vehicle2"> Âm Nhạc</label>
+
+            <input type="checkbox" name="vehicle3">
+            <label for="vehicle3"> Đọc Sách</label> <br>
+
+            <input type="checkbox" name="vehicle4"> 
+            <label for="vehicle4">Lướt Wed</label> 
+
+            <input type="checkbox" name="vehicle5"> 
+            <label for="vehicle5">Chơi Game</label> 
+
+            <input type="checkbox" name="vehicle6"> 
+            <label for="vehicle6">Điện Ảnh </label> <br>
+
+            <input type="checkbox" name="vehicle7"> 
+            <label for="vehicle7">Du lịch</label> 
+
+        </form>
+        <form class="button" action="">
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
