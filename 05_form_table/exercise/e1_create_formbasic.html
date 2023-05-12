@@ -61,21 +61,25 @@
         font-size: 20px;
         position: relative;
         left: 30px;     
-        border: 2px solid #4285f4;
+        border: 1px solid #4285f4;
    
+    }
+    .phan2 label{
+        
     }
 </style>
 <body>
 <div class="container">
-    <div class="content">
+    <form class="content">
+        
         <h1>Sở Thích của bạn</h1>
-        <form class="mainly" action="">
+        <div class="mainly" action="">
             <p>Họ Và Tên</p>
             <input type="text" name="Name">
             <p>Email</p>
             <input type="text" name="Email">
-        </form>
-        <form class="nav" action="">
+        </div>
+        <div class="nav" action="" >
             <p>Sở Thích</p>
             <input type="checkbox" name="vehicle1"> 
             <label for="vehicle1"> Thể thao</label>
@@ -97,13 +101,15 @@
 
             <input type="checkbox" name="vehicle7"> 
             <label for="vehicle7">Du lịch</label> 
+            
 
-        </form>
-        <form class="button" action="">
+        </div>
+        <div class="button" action="">
             <input type="submit">
             <input type="reset">
-        </form>
-    </div>
+    
+        </div>
+    </form>
 
 </div>
 </body>
