@@ -13,29 +13,56 @@
         width: 100%;
         height: 95vh;
     }
+    .container h1{
+        background: #E0FFFF	;
+    }
+    .container label{
+        color: #5F9EA0;
+    }
+    .container input{
+        width: 200px;
+        height: 30px    ;
+    }
+
+    label{
+        display: inline-block;
+        width: 100px;
+    }
 </style>
 <body>
-    <div class="container">
+    <div class="container"> <br>
         <h1>Đăng Ký Học Viên</h1>
         <form action="nav">
+           <div class="nav1 ">
             <label for="name">Họ Và Tên</label>
             <input type="text" name="name"> <br> <br>
             <label for="date">Ngày sinh</label>
             <input type="text" name="date"> <br> <br>
-            <label for="n">giới tính</label>
-           
+           </div>
+            <label for="n">Giới tính</label>
             <input type="radio" name="n">
             <label for="n">Nam</label>
-            
             <input type="radio" name="n" >
-            <label for="n">Nữ</label>
-            <label for="Address">-Địa chỉ-</label>
-            <select  name="Address" id="">
-                <option value="cHỌN lỚP">Chọn lớp</option>
-                <option value="">1</option>
-                <option value="">1</option>
-                <option value="">1</option>
-            </select>
+            <label for="n">Nữ</label><br>
+
+            <label for="date">Ngày sinh</label>
+            <input type="text" name="date"> <br> <br>
+            
+            <label for="class">Lớp</label> 
+            <select  name="class" id=""> 
+                <option value="chọn lớp">--Chọn lớp--</option>
+                <option value="">10</option>
+                <option value="">12</option>
+                <option value="">11</option>
+            </select> <br> <br>
+            
+            <label for="name">Họ Và Tên</label> 
+            <input type="text" name="name"> <br> <br>
+            <label for="date">Ngày sinh</label>
+            <input type="text" name="date"> <br> <br>
+
+            <input type="submit" value="Đăng Ký">
+            <input type="submit" value="Đăng Nhập">
         </form>
     </div>
 </body>
