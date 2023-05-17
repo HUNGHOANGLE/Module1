@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Caculapor</h2>
+    <table>
+        <th><input type="text" id="a"></th>
+        <th><input type="text" id="b"></th>
+
+    </table>
+    <table>
+        <td><button onclick="cong()">Additon(+)</button></td>
+        <td><button onclick="tru()">Subtraction(-)</button></td>
+        <td><button onclick="nhan()">Multipcation(X)</button></td>
+        <td><button onclick="chia()">Additon(Divison(/))</button></td>
+    </table>
+    <p id="kq"></p>
+
+    <script>
+        function cong(){
+            let a = document .getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let Result;
+            Result = Number(a) + Number(b);
+            document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+        }
+        function tru(){
+            let a = document .getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let Result;
+            Result = Number(a) - Number(b);
+            document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+        }
+        function nhan(){
+            let a = document .getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let Result;
+            Result = Number(a) * Number(b);
+            document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+        }
+        function chia(){
+            let a = document .getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let Result;
+            Result = Number(a) / Number(b);
+            document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+        }
+        
+    </script>
+</body>
+</html>

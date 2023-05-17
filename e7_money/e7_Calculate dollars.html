@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        
+    }
+    .ac1{
+        flex: 1px;
+    }
+    .ac2{
+        flex: 1px;
+
+    }
+    .ac3{
+        flex: 1px;
+    }
+    .btn{
+        flex: 1px;
+        display: flex;
+        text-align: center;
+    }
+    .ac2  select{
+        width: 50%;
+        font-size: 20px;
+    }
+    .ac3  select{
+        font-size: 20px;
+        width: 50%;
+
+    }
+</style>
+<body>
+   <div class="container">
+    <div class="ac1">
+        <p>Amount</p>
+        <input type="text" id="nhapgiatri">
+    </div>
+
+    <div class="ac2">
+        <p>From Currency</p>
+        <select  id="s1">
+            <option value="VND">Việt Nam</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+        <div class="ac3">
+            <p>To Currency</p>
+            <select id="s2">
+                <option value="USD">USD</option>
+                <option value="VND">Việt Nam</option>
+            </select>
+    </div>
+    <div class="btn">
+        <button onclick="btn()">Chuyển đổi</button>
+    </div>
+
+</div>
+
+   <script>
+    function btn(){
+        let input = document.getElementById("nhapgiatri").value;
+        let select1 = document.getElementById("s1").value;
+        let select2 = document.getElementById("s2").value;
+        if (select1 == select2){
+        alert(input)
+        
+    }
+    if (select1  == "VND" &&  select2 == "USD"){
+        let input1 = input / 23.400 ;
+        alert(input1);
+        
+    }
+    if (select1  == "USD" &&  select2 == "VND"){
+        let input2 = input * 23.400 ;
+        alert(input2);
+        
+    }
+}
+              
+   </script>
+</body>
+</html>
