@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="controler">
+    <div class="input">
+      <input type="text" id="ip1">
+    </div>
+    <div class="vnd">
+      <select name="" id="s1">
+        <option value="vnd">VND</option>
+        <option value="usd">USD</option>
+      </select>
+    </div>
+    <div class="usd">
+      <select name="" id="s2">
+        <option value="usd">USD</option>
+        <option value="vnd">VND</option>
+      </select>
+    </div>
+    <div class="btn">
+      <button onclick="btn()">CONvert</button>
+    </div>
+    <p id="kq"></p>
+  </div>
+  <script>
+    function btn(){
+      let input = document.getElementById("ip1").value;
+      let sl1 = document.getElementById("s1").value;
+      let sl2 = document.getElementById("s2").value;
+      if (sl1 == sl2){
+        alert(input)
+      }
+      if(sl1 == "vnd" && sl2 == "usd" ) {
+        let sl = input / 23.400;
+        document.getElementById("kq").innerHTML = "" + sl;
+      }
+    }
+  </script>
+</body>
+</html>

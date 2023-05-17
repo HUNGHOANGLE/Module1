@@ -60,26 +60,26 @@
     <div class="btn">
         <button onclick="btn()">Chuyển đổi</button>
     </div>
+   
 
 </div>
-
+<p id="kq"></p>
    <script>
     function btn(){
         let input = document.getElementById("nhapgiatri").value;
         let select1 = document.getElementById("s1").value;
         let select2 = document.getElementById("s2").value;
         if (select1 == select2){
-        alert(input)
-        
+            document.getElementById ("kq").innerHTML = "Resul:" + input;
     }
     if (select1  == "VND" &&  select2 == "USD"){
         let input1 = input / 23.400 ;
-        alert(input1);
+        document.getElementById ("kq").innerHTML = "Resul:" + input1;
         
     }
     if (select1  == "USD" &&  select2 == "VND"){
         let input2 = input * 23.400 ;
-        alert(input2);
+        document.getElementById ("kq").innerHTML = "Resul:" + input2;
         
     }
 }
