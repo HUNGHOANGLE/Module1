@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<label for="">Nhap So Nguyen </label>
+<input type="text" id="songuyen">
+<button onclick="nhapsonguyen()">nhap</button>
+
+    <script>
+        function nhapsonguyen(){
+            let soguyen = document.getElementById('songuyen').value;
+            
+            if(soguyen > 0 ){
+                alert(soguyen + "lớn hơn 0")
+
+                
+            }else if(soguyen == 0){
+                alert(soguyen + " Bằng 0")
+            }
+            else  {
+                alert(soguyen + "  nho hon 0")
+            }
+
+        }
+    </script>
+</body>
+</html>
