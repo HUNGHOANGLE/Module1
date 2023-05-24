@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const thue = +prompt("Tinh Thue ca Nhan")
+
+        if( thue <= 60){
+            thue1 = 60 * 5 /100;
+            alert("Thue tong la :" + thue1 )
+        }else if(thue > 60 && thue <=120){
+            thue2 = 60  * 5 /100 +  (thue - 60) * 10 /100  ;
+            alert("Thue tong la :" + thue2 )
+        }else if(thue > 120 && thue <=200){
+            thue3 = 60  * 5 /100 + 60 * 10/100 + (thue - 120) * 15/100  ;
+            alert("Thue tong la :" + thue3 )
+        }else if(thue > 200 && thue <= 400 ){
+            thue4 = 60  * 5 /100 + 60 * 10/100 + 80 *15/100 + (thue - 200) * 20/100  ;
+            alert("Thue tong la :" + thue4 )
+        }else if(thue > 400 && thue <= 800 ){
+            thue5 = 60  * 5 /100 + 60 * 10/100 + 80 *15/100 + 200 *20 /100 (thue - 340) * 30/100  ;
+            alert("Thue tong la :" + thue5 )
+        }else{
+            thue6 = 60  * 5 /100 + 60 * 10/100 + 80 *15/100 + 200 *20 /100 + 400 *30 /100 +  (thue - 800) * 35/100  ;
+            alert("Thue tong la :" + thue6 )
+        }
+        
+    </script>
+</body>
+</html>

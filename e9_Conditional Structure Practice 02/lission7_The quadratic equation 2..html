@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const a = +prompt("Phuong Trinh bac nhat")
+        const b = +prompt("Phuong Trinh bac nhat")
+        const c = +prompt("Phuong Trinh bac nhat")
+        let delta = b * b - 4 * a *c
+        alert(delta)
+        if( delta > 0) {
+            x1 = (-b + Math.sqrt(delta)) /2 * a;
+            x2 = (-b - Math.sqrt(delta)) /2 * a;
+            alert("Phuong Trinh co nghiem: " + x1 )
+            alert("Phuong Trinh co nghiemm: " + x2 )
+
+        }else if(delta == 0 ){
+            x = -b / 2 * a 
+            alert("Phuong Trinh có Nghiem là " + delta )
+        }else if(delta < 0){
+            alert("Phuong Trinh Vo Nghiem")
+        }
+    </script>
+</body>
+</html>
