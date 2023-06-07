@@ -19,20 +19,22 @@
         let chua = prompt("Nhap so can kiem tra" )
         for(i = 0 ; i < array.length ; i++){
             if(chua == array[i]){
-                alert("V is in the array");
-                    break;
-                    
+                // alert("V is in the array");
+                //     break;
+                    array.slice(i,1)
+               
             }
-            else{
-                alert("V is not the array");
-                break;
-            }
-        }
-     
-
-            // if(isExist == false){
-            //     alert("V is not exist in array")
+            // else{
+            //     alert("V is not the array");
+            //     break;
             // }
+        }
+        array.push(0)
+        console.log(array);
+
+        // if(isExist == false){
+        //     alert("V is not exist in array")
+        // }
   
     </script>
 </body>
