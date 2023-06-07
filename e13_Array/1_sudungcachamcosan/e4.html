@@ -14,9 +14,9 @@
         let max = songuyen[0]
         let sum = 0 
         for(let  i = 0; i <= songuyen.length; i++ ){
+            sum += songuyen[i];
             if(songuyen[i] > max){
                 max = songuyen[i]
-                sum += i;
             }            
         }
         let ttb = max/songuyen.length;

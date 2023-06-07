@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let array = [];
+        let isExist = false;
+
+        for(let i = 0 ; i < 10 ; i++ ){
+             array[i] = parseInt(prompt())
+        }
+        
+        let chua = prompt("Nhap so can kiem tra" )
+        for(i = 0 ; i < array.length ; i++){
+            if(chua == array[i]){
+                alert("V is in the array");
+                isExist = true;
+                break;
+            }
+        }
+
+        if(isExist == false){
+            alert("V is not exist in array")
+        }
+  
+    </script>
+</body>
+</html>
