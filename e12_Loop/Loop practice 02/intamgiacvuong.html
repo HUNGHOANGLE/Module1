@@ -43,11 +43,11 @@
         document.write("<br>")
         for(let i = 1; i <= 5; i ++){
             for(let j =1; j <= 5 ; j++ ){
-                if(j <= 6 -i ){
-                    document.write("*");
-                }else{
+                if(j <= i -1 ){
                     document.write("&nbsp&nbsp");
-
+                }else{
+                    
+                    document.write("*");
                 }
             }
             document.write("<br>")
